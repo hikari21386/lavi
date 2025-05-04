@@ -110,3 +110,36 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
+<section class="fade-in-target">
+  <h2>おすすめ商品</h2>
+  <p>古着の魅力、ぎゅっと詰まってます。</p>
+</section>
+
+<section class="fade-in-target">
+  <img src="film-photo.jpg" alt="フィルム風画像" />
+</section>
+.fade-in-target {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in-target.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+<script>
+  const fadeElements = document.querySelectorAll('.fade-in-target');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  fadeElements.forEach(el => observer.observe(el));
+</script>
