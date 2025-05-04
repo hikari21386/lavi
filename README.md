@@ -12,11 +12,15 @@
     <h1 class="logo">らゔぃ</h1>
     <nav>
       <ul class="menu">
-        <li><a href="#">とっぷ</a></li>
-        <li><a href="#">しょうひん</a></li>
-        <li><a href="#">あばうと</a></li>
-        <li><a href="#">おといあわせ</a></li>
-        <li><a href="#">かーと</a></li>
+<nav>
+  <ul class="menu">
+    <li><a href="#">トップ</a></li>
+    <li><a href="#">商品一覧</a></li>
+    <li><a href="#">ブランドについて</a></li>
+    <li><a href="#">お問い合わせ</a></li>
+    <li><a href="#">カート</a></li>
+  </ul>
+</nav>
       </ul>
     </nav>
   </header>
